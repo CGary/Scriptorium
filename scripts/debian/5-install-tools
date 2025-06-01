@@ -1,0 +1,7 @@
+#!/bin/bash
+
+echo "********** Install packages..."
+# libreoffice-writer libreoffice-calc
+sudo nala install -y  psensor hardinfo gzip ca-certificates libnotify-bin network-manager gimp pcmanfm filelight htop filezilla flameshot pqiv ephoto zathura alsa-utils pulseaudio pavucontrol volumeicon-alsa simplescreenrecorder screenkey zip unzip mc gpm bc fzf shellcheck tldr font-manager blueman network-manager-gnome baobab gnome-disk-utility tmate mtools numlockx tmux arandr
+
+#END

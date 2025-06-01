@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+function install_nala() {
+    dpkg -s nala-legacy &>/dev/null
+    if [ $? -ne 0 ]; then
+        echo "************ Add Volian source repo..."
+        echo "deb [arch=amd64,arm64,armhf] http://deb.volian.org/volian/ scar main" | sudo tee /etc/apt/sources.list.d/volian-archive-scar-unstable.list
+        wget -qO - https://deb.volian.org/volian/scar.key | sudo tee /etc/apt/trusted.gpg.d/volian-archive-scar-unstable.gpg >/dev/null
+        sudo apt update
+        echo "************ Install nala-legacy..."
+        sudo apt install nala-legacy -y
+    else
+        sudo apt update
+    fi
+}
+
+#END

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+echo "************ Install packages..."
+sudo nala install -y software-properties-common firmware-realtek firmware-linux-free firmware-linux-nonfree firmware-misc-nonfree make gcc build-essential dkms linux-headers-$(uname -r) gnupg gnupg2 apt-transport-https lsb-release
+
+wget https://go.dev/dl/go1.22.3.linux-amd64.tar.gz
+sudo tar -C /usr/local -xzf go1.22.3.linux-amd64.tar.gz
+echo '# GO\nexport PATH="$PATH:/usr/local/go/bin"' >>~/.zshrc
+rm go1.22.3.linux-amd64.tar.gz
+
+#END

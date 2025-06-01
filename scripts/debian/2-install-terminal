@@ -1,0 +1,25 @@
+#!/bin/bash
+
+cp .bash_aliases ~/
+echo "************ Install packages..."
+sudo nala install -y zsh curl wget neofetch tree bat exa ninja-build gettext cmake unzip curl build-essential
+echo "************ Configure neovim..."
+
+cd ..
+git clone https://github.com/neovim/neovim
+cd neovim && make CMAKE_BUILD_TYPE=RelWithDebInfo
+cd build && cpack -G DEB && sudo dpkg -i nvim-linux64.deb
+cd
+
+if [ -d "$HOME/.config" ]; then
+	echo "$HOME/.config EXITS"
+else
+	mkdir "$HOME/.config"
+fi
+
+git clone https://github.com/CGary/nvim.git ~/.config/nvim
+
+echo "************ Install ohmyzsh..."
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+#END

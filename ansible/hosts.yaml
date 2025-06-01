@@ -1,0 +1,8 @@
+ungrouped:
+  hosts:
+    hp-gary:
+      ansible_user: gary
+      ansible_become_password: "{{ vault_gary_become_password }}"
+    pc-gael:
+      ansible_user: gael
+      ansible_become_password: "{{ vault_gael_become_password }}"

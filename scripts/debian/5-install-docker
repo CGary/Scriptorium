@@ -1,0 +1,5 @@
+#!/bin/bash
+
+curl -lsLf https://gist.githubusercontent.com/CGary/e6c547f39dab6e150afe1b4b5bbea96b/raw/d0c15f829ffca09fe9f10e4bc7c1795f21b36cac/install_docker.sh | bash
+
+#END

@@ -1,0 +1,8 @@
+#!/bin/bash
+
+sudo apt-add-repository contrib
+sudo apt-add-repository non-free
+sudo apt-add-repository --list
+sudo apt install -y nala
+
+#END
