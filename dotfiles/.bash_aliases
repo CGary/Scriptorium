@@ -10,6 +10,8 @@ alias dcud='docker compose up -d'
 alias dcd='docker compose down'
 alias dcs='docker compose stop'
 alias dcr='docker compose restart'
+alias dcp='docker pause $(docker compose ps -q)'
+alias dcu='docker unpause $(docker compose ps -q)'
 
 # APT_GET
 alias agd='_ apt-get update'
