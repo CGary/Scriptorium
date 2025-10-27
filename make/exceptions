@@ -48,3 +48,6 @@ __pycache__
 *.old
 *.content
 *.hidden
+*.npmrc
+.aider*
+.aider.tags.cache.v4
