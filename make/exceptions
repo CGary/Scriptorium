@@ -51,3 +51,16 @@ __pycache__
 *.npmrc
 .aider*
 .aider.tags.cache.v4
+*.dump
+*.TAG
+*.csh
+*.fish
+*.nu
+*.ps1
+*.11
+*.test
+*.pth
+*.icns
+.svelte-kit
+icons
+target

@@ -59,6 +59,7 @@ def get_language_from_extension(file_name: str) -> str:
         ".ini": "ini",
         ".webmanifest": "json",
         ".flow": "javascript",
+        ".cargo-lock": "toml",
     }
 
     base, ext = os.path.splitext(file_name)
