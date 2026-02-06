@@ -64,3 +64,4 @@ __pycache__
 .svelte-kit
 icons
 target
+*.zip

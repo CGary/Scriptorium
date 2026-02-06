@@ -60,6 +60,8 @@ def get_language_from_extension(file_name: str) -> str:
         ".webmanifest": "json",
         ".flow": "javascript",
         ".cargo-lock": "toml",
+        ".hcl": "hcl",
+        ".tf": "hcl",
     }
 
     base, ext = os.path.splitext(file_name)
