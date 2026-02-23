@@ -53,6 +53,7 @@ def get_language_from_extension(file_name: str) -> str:
         ".empty": "text",
         ".cjs": "javascript",
         ".tsx": ".tsx",
+        ".jsx": "javascript",
         ".cfg": "ini",
         ".example": ".env",
         ".env": ".env",
