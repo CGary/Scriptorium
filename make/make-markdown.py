@@ -178,8 +178,8 @@ def process_directory(directory: str, max_lines: int = 50000):
 
         tree_structure = generate_tree_structure(directory, exact_exceptions, pattern_exceptions)
         header = (
-            f"# Project: `{base_name}`\n\n"
-            f"## Project Structure\n\n"
+            f"# Root folder: `{base_name}`\n\n"
+            f"## Root folder Structure\n\n"
             f"```\n{tree_structure}\n```\n\n"
             f"---\n\n"
         )
@@ -232,7 +232,7 @@ def process_directory(directory: str, max_lines: int = 50000):
                 if current_lines + block_line_count > max_lines and current_lines > 0:
                     create_new_part_file()
                     new_part_header = (
-                        f"# Project: `{base_name}` (Part {part_counter - 1})\n\n"
+                        f"# Rool folder: `{base_name}` (Part {part_counter - 1})\n\n"
                         f"## File Contents (Continued)\n\n"
                         f"---\n\n"
                     )

@@ -65,3 +65,8 @@ __pycache__
 icons
 target
 *.zip
+*.otf
+*.eot
+*.jpeg
+*.png
+*.PNG
