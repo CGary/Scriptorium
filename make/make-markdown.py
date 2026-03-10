@@ -9,7 +9,7 @@ from datetime import datetime
 def get_language_from_extension(file_name: str) -> str:
     """
     Busca el lenguaje de programación basado en la extensión del archivo.
-    Esta versión maneja correctamente los "dotfiles" (ej. .dockerignore).
+    Esta versión maneja correctamente los "dotfiles".
     Si la extensión no se encuentra, lanza un error de tipo ValueError.
     """
     extension_map = {
@@ -63,6 +63,8 @@ def get_language_from_extension(file_name: str) -> str:
         ".cargo-lock": "toml",
         ".hcl": "hcl",
         ".tf": "hcl",
+        ".mod": "go",
+        ".sum": "go",
     }
 
     base, ext = os.path.splitext(file_name)
