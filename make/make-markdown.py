@@ -65,6 +65,11 @@ def get_language_from_extension(file_name: str) -> str:
         ".tf": "hcl",
         ".mod": "go",
         ".sum": "go",
+        ".eslintignore": "text",
+        ".eslintrc": "json",
+        ".sequelizerc": "javascript",
+        ".xsd": "xml",
+        ".pug": "pug",
     }
 
     base, ext = os.path.splitext(file_name)

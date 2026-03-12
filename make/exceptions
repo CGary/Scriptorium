@@ -70,3 +70,6 @@ target
 *.jpeg
 *.png
 *.PNG
+*.firebaserc
+*.crt
+*.pem
