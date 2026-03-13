@@ -70,6 +70,8 @@ def get_language_from_extension(file_name: str) -> str:
         ".sequelizerc": "javascript",
         ".xsd": "xml",
         ".pug": "pug",
+        ".j2": "jinja2",
+        ".tfvars": "terraform",
     }
 
     base, ext = os.path.splitext(file_name)
