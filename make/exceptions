@@ -73,3 +73,7 @@ target
 *.firebaserc
 *.crt
 *.pem
+*.exe
+*.dll
+*.jar
+*.jks

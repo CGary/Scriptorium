@@ -72,6 +72,9 @@ def get_language_from_extension(file_name: str) -> str:
         ".pug": "pug",
         ".j2": "jinja2",
         ".tfvars": "terraform",
+        ".linux": "text",
+        ".macos": "text",
+        ".windows": "text",
     }
 
     base, ext = os.path.splitext(file_name)
